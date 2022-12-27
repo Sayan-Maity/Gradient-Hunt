@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: white;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+header {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0 0 1rem rgb(227, 227, 227);
+}
+
+header img {
+  width: 10vw;
+  height: auto;
+}
+
+header h2 {
+  color: #ffffff;
+  padding-right: 1%;
+}
+header nav {
+  /* width: 100%; */
+  width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header nav .links a{
+  /* background-color: red; */
+  border: 1px solid #333;
+  padding: 0.8rem 1.2rem ;
+  border-radius: 4px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  transition: 0.3s all ease-in-out;
+}
+header nav .links a:hover {
+  box-shadow: 0 0.2rem 1rem rgb(201, 201, 201);
+
+}
+header nav .links a:nth-child(2) {
+  margin-left: 1rem;
+}
+
+
+
+
+.copy_div {
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  position: fixed;
+  display: none;
+}
+
+.copy_div .copy_msg {
+  position: fixed;
+  bottom: -50vh;
+  z-index: 9999;
+  background-image: linear-gradient(to right, #ffff0091, #2bff0095);
+  padding: 5vh 5vw 5vh 5vw;
+  width: 100%;
+  height: auto;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+  line-height: 3rem;
+  
+}
+
+
+
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.container .palettes  {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1300px;
+
+}
+
+
+
+.container .palettes .box {
+  /* margin-bottom: 5rem; */
+  padding: 7rem 13rem;
+  border-radius: 10px;
+  transition: 350ms;
+  cursor: pointer;
+  margin: 2rem;
+  border: 1.2rem solid #fff;
+  box-shadow: 0px 0px 20px rgb(222, 222, 222);
+}
+
+.container .palettes .box:hover {
+  transform: scaleY(1.1);
+  box-shadow: 0px 20px 25px rgb(194, 194, 194);
+}
+
+
+
+/* @media all and (max-width: 850px) {
+  header img {
+    width: 15vw;
+    height: auto;
+  }
+}
+
+@media all and (max-width: 600px) {
+
+  .container .palettes {
+    display: flex;
+  }
+
+}
+
+@media all and (max-width: 450px) {
+  header {
+    padding: 3% 3%;
+  }
+  header img {
+    width: 17vw;
+    height: auto;
+  }
+
+} */
