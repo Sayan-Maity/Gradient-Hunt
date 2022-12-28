@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+html {
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat:no-repeat;
+
+}
+
+body {
+
+color: #035aab;
+text-align: center;
+}
+
+/* =============  Scrollbar  ============= */
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #000;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: white;
+  }
+  
+  
+  header {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0 0 1rem rgb(227, 227, 227);
+  }
+  
+  header img {
+    width: 10vw;
+    height: auto;
+  }
+  
+  header h2 {
+    color: #ffffff;
+    padding-right: 1%;
+  }
+  header nav {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header nav .links a{
+    border: 1px solid #333;
+    padding: 0.8rem 1.2rem ;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    transition: 0.3s all ease-in-out;
+  }
+  header nav .links a:hover {
+    box-shadow: 0 0.2rem 1rem rgb(201, 201, 201);
+  
+  }
+  header nav .links a:nth-child(2), header nav .links a:nth-child(3) {
+    margin-left: 0.5rem;
+  }
+  
+
+
+.random-color{
+width: 350px;
+box-shadow: 0 0 20px rgba(0,139,253,0.25);
+margin: 50px auto;
+padding: 20px; 
+height: 400px;
+}
+
+.display{
+width: 350px;
+height: 200px;
+border: 2px solid white;
+box-shadow: 0 0 20px rgba(1,1,1,0.35);
+background: linear-gradient(to right, #FFAAAA, #734C8F)
+}
+.codess{
+padding: 5px;
+margin-top: 30px;
+margin-bottom: 30px;
+font-family: sans-serif;
+letter-spacing: 1px;
+box-shadow: 0 0 20px rgba(0,139,253,0.25);
+}
+.color1,.color2{
+width: 70px;
+height: 40px;
+float: left;
+margin: 10px;
+margin-top: 20px;
+}
+select{
+float: right;
+margin-top: 25px;
+width: 130px;
+height: 35px;
+}

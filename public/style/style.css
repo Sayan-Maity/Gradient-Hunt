@@ -8,27 +8,24 @@
 }
 
 html {
-  font-size: 12px;
   scroll-behavior: smooth;
 }
+body {
+  background-color: #f7f7f7;
 
-/* Scrollbar */
+}
+
+/* =============  Scrollbar  ============= */
 ::-webkit-scrollbar {
   width: 4px;
 }
 ::-webkit-scrollbar-track {
   background: #000;
 }
-
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: white;
 }
 
-body {
-  background-color: #eeeeee;
-}
 
 header {
   display: flex;
@@ -48,18 +45,16 @@ header h2 {
   padding-right: 1%;
 }
 header nav {
-  /* width: 100%; */
   width: 1200px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 header nav .links a{
-  /* background-color: red; */
   border: 1px solid #333;
   padding: 0.8rem 1.2rem ;
   border-radius: 4px;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   color: #333;
@@ -69,8 +64,8 @@ header nav .links a:hover {
   box-shadow: 0 0.2rem 1rem rgb(201, 201, 201);
 
 }
-header nav .links a:nth-child(2) {
-  margin-left: 1rem;
+header nav .links a:nth-child(2), header nav .links a:nth-child(3) {
+  margin-left: 0.5rem;
 }
 
 
@@ -78,29 +73,36 @@ header nav .links a:nth-child(2) {
 
 .copy_div {
   width: 100vw;
-  height: 100vh;
+  height: 10vh;
   z-index: 9999;
+  justify-content: center;
+  display: flex;
   position: fixed;
+  visibility: hidden;
+}
+.copy_div h3#code {
   display: none;
 }
 
 .copy_div .copy_msg {
   position: fixed;
-  bottom: -50vh;
+  top: 20vh;
   z-index: 9999;
-  background-image: linear-gradient(to right, #ffff0091, #2bff0095);
-  padding: 5vh 5vw 5vh 5vw;
-  width: 100%;
-  height: auto;
+  box-shadow: 0px 0px 5px rgba(100, 100, 100, 0.495);
+  background-color: #fff;
+  padding: 0.8rem 1.6rem ;
+  height: fit-content;
+  width: fit-content;
   font-size: 1.5rem;
   color: #333;
   text-align: center;
-  line-height: 3rem;
+  border-radius: 5px;
   
 }
-
-
-
+.copy_div .copy_msg p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+}
 
 
 
@@ -122,12 +124,12 @@ header nav .links a:nth-child(2) {
 
 .container .palettes .box {
   /* margin-bottom: 5rem; */
-  padding: 7rem 13rem;
+  padding: 6rem 10rem;
   border-radius: 10px;
   transition: 350ms;
   cursor: pointer;
-  margin: 2rem;
-  border: 1.2rem solid #fff;
+  margin: 1.5rem;
+  border: 1rem solid #fff;
   box-shadow: 0px 0px 20px rgb(222, 222, 222);
 }
 
@@ -163,3 +165,10 @@ header nav .links a:nth-child(2) {
   }
 
 } */
+
+
+
+
+
+
+
