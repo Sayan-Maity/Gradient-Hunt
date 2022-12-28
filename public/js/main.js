@@ -18,7 +18,7 @@ boxes.forEach(box => {
         navigator.clipboard.writeText(rgb);
         code.innerHTML = rgb;
         let bottom = -50;
-        copy_div.style.display = "Block";
+        copy_div.style.visibility = "visible";
         let copy_interval = setInterval(() => {
             copy_msg.style.bottom = `${bottom}vh`;
             bottom += 1;
@@ -32,7 +32,7 @@ boxes.forEach(box => {
                         bottom -= 1;
                         if(bottom < -50){
                             clearInterval(copy_interval_two);
-                            copy_div.style.display = "none";
+                            copy_div.style.visibility = "hidden";
 
                         }
                     },1)
@@ -42,6 +42,7 @@ boxes.forEach(box => {
 
     });
 });
+
 
 
 
